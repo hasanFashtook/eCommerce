@@ -1,0 +1,57 @@
+.Register__Background {
+  height: 20rem;
+  background: var(--teal-teal-300, #4FD1C5);
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 0.9375rem;
+  -moz-border-radius: 0.9375rem;
+  -ms-border-radius: 0.9375rem;
+  -o-border-radius: 0.9375rem;
+  border-radius: 0.9375rem;
+}
+
+.Background__image1 {
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  transform: rotate(5.69deg);
+}
+
+.Background__image2 {
+  position: absolute;
+  top: -78px;
+  left: 98px;
+  transform: rotate(2.69deg);
+}
+
+.Welcome {
+  /* margin-top: 6rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.59rem;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.Welcome__head {
+  color: var(--black-amp-white-white, #FFF);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  /* 2.6rem */
+}
+
+.Welcome__body {
+  color: var(--black-amp-white-white, #FFF);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 22rem;
+  /* 1.225rem */
+}

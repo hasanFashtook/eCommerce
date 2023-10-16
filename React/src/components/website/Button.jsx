@@ -1,14 +1,22 @@
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { ChevronLeftIcon } from '@heroicons/react/24/outline'
 import Cart from './icons/Cart'
 
-function Button({ className, onClick, children, type, status, size, arrow, cart, path, disabled }) {
+function Button({
+  className,
+  onClick,
+  children,
+  type,
+  status,
+  size,
+  arrow,
+  cart
+}) {
 
 
   return (
-    <Link
-      to={path}
+    <button
       onClick={onClick}
       className={`Button w-fit outline-none flex justify-center gap-2 items-center ${size == 'small' ? ' py-[10px]' : ' py-4'} px-4 rounded transition-all
       ${status == 'solid' ? ' text-white hover:brightness-125 ' +
@@ -45,12 +53,13 @@ function Button({ className, onClick, children, type, status, size, arrow, cart,
       {arrow &&
         <ChevronLeftIcon className='w-4 h-4' />
       }
-    </Link>
+    </button>
   )
 }
 
 Button.propTypes = {
   className: PropTypes.string,
+  onClick: PropTypes.func,
   children: PropTypes.string,
   type: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,

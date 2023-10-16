@@ -3,7 +3,6 @@ import {
   UserPlusIcon,
   PencilSquareIcon,
   BuildingStorefrontIcon,
-  ShoppingCartIcon,
   UserCircleIcon,
   FolderIcon,
   FolderPlusIcon,

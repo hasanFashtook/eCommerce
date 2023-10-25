@@ -49,7 +49,6 @@ export default function App() {
                     <Route path='dashboard' element={<Dashboard />}>
 
                         <Route element={<RequireAuth allowedRole={['1995']} />}>
-                            {/* <Route path='homepage' element={<HomePage />} /> */}
                             <Route path='users' element={<Users />} />
                             <Route path='user/add' element={<AddUser />} />
                             <Route path='user/:id' element={<UserEdit />} />

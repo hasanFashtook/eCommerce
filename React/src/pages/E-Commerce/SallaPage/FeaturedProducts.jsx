@@ -5,7 +5,7 @@ import axios from 'axios';
 import { PRODUCTS, baseUrl } from '../../../API/Api';
 import Cookie from 'cookie-universal';
 import { HeartIcon } from '@heroicons/react/24/outline';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addProductToCart } from '../../../Store/Reducers/cartReducer';
 
 function FeaturedProducts({ className }) {
@@ -13,9 +13,7 @@ function FeaturedProducts({ className }) {
     const cookie = Cookie();
     const token = cookie.get('userToken');
     const dispatch = useDispatch();
-    const productsCart = useSelector(state => state.cart)
 
-    console.log(productsCart);
 
     useEffect(() => {
         (async function () {
